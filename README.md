@@ -527,7 +527,7 @@ Ao completar esta atividade, você será capaz de:
 
 #### Passo 7: Testar
 1. Execute a aplicação
-2. Acesse o Scalar
+2. Acesse o Swagger
 3. Teste o novo endpoint:
    - Tente obter uma categoria que existe (ID 1, 2 ou 3)
    - Tente obter uma categoria que não existe (ID 999)
@@ -630,7 +630,7 @@ Se você terminou a atividade principal e quer mais desafios:
 - [ ] Funcionalidade "ObterCategoriaPorId" implementada
 - [ ] Código compila sem erros
 - [ ] Aplicação executa corretamente
-- [ ] Endpoint testado via Scalar
+- [ ] Endpoint testado via Swagger
 - [ ] Commits com mensagens descritivas
 - [ ] Código comentado em português
 - [ ] README lido completamente

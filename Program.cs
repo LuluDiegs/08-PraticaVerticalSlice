@@ -12,8 +12,12 @@ using AprendizadoVerticalSlice.Funcionalidades.Produtos.ExcluirProduto;
 // Importações para os Handlers de Categorias
 using AprendizadoVerticalSlice.Funcionalidades.Categorias.ObterTodasCategorias;
 using AprendizadoVerticalSlice.Funcionalidades.Categorias.CriarCategoria;
+using AprendizadoVerticalSlice.Funcionalidades.Categorias.ObterCategoriaPorId;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Registro do Handler de ObterCategoriaPorId
+builder.Services.AddScoped<ObterCategoriaPorIdHandler>();
 
 // Configuração do Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
@@ -69,5 +73,6 @@ app.MapExcluirProduto();
 // Mapeamento dos endpoints de Categorias
 app.MapObterTodasCategorias();
 app.MapCriarCategoria();
+app.MapObterCategoriaPorId();
 
 app.Run();
